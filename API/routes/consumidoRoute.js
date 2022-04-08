@@ -4,10 +4,10 @@ const consumidorCT = require('../controllers/consumidorCT')
 
 const router = Router()
 
-router.get('/consumidor', consumidorCT.pegaTodosConsumidores)
-router.get('/consumidor/:id', consumidorCT.pegaUmConsumidor)
-router.post('/consumidor', consumidorCT.criaConsumidor)
-router.put('/consumidor/:id', consumidorCT.atualizaConsumidor)
-router.delete('/consumidor/:id', consumidorCT.apagaConsumidor)
+router.get('/consumidors', consumidorCT.pegaTodosConsumidores)
+router.get('/consumidors/:id', consumidorCT.pegaUmConsumidor)
+router.post('/consumidors', consumidorCT.criaConsumidor)
+router.put('/consumidors/:id', consumidorCT.atualizaConsumidor)
+router.delete('/consumidors/:id', consumidorCT.apagaConsumidor)
 
 module.exports = router
